@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penguin fashion tailwind</title>
+    <!-- tailwind-link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        header: '#FFFBF0',
+                        buynow: ' #85A019',
+                        orenge: '#FABE4C',
+                        black: '#363958'
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <header class="bg-header">
+        <!-- navication -->
+        <div class="container mx-auto px-9 pt-9">
+            <nav class="">
+                <div class="flex justify-between">
+                    <div class="">
+                        <img width="200px" src="icons/logo.png" alt="" srcset="">
+                    </div>
+                    <div class="grid grid-cols-4 justify-items-end gap-7 ">
+                        <h3 class="prose md:prose-lg lg:prose-xl">Home</h3>
+                        <h3 class="prose md:prose-lg lg:prose-xl">product</h3>
+                        <h3 class="px-3 whitespace-nowrap prose md:prose-lg lg:prose-xl">About Us</h3>
+                        <h3 class="px-3 whitespace-nowrap prose md:prose-lg lg:prose-xl">Contact Us</h3>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <section class="container mx-auto px-9 py-9">
+            <div class="space-y-4">
+                <h1 class="uppercase text-7xl font-semibold">
+                    <span class="text-orenge">Be the Penguins
+                    </span><br>
+                    <span class="text-black">of Winter</span>
+                </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolores inventore illo impedit accusamus
+                    quod voluptatum. Libero ipsa nam earum?</p>
+                <button class="uppercase bg-buynow py-4 text-white font-semibold rounded-xl px-8 "><span><img
+                            class="inline me-1" width="24" height="24" src="icons/shopping-cart 1.png" alt=""
+                            srcset=""></span>buy
+                    now</button>
+
+
+            </div>
+        </section>
+
+    </header>
+
+</body>
+
+</html>
